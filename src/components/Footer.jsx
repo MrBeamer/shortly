@@ -28,6 +28,7 @@ export default function Footer() {
             href="https://www.facebook.com/CDPROJEKTRED/"
             target="_blank"
             aria-label="Link to Facebook-Account"
+            rel="noopener noreferrer"
           >
             <i class="fa-facebook fab footer-social-link"></i>
           </a>
@@ -37,6 +38,7 @@ export default function Footer() {
             href="https://www.instagram.com/cdpred/"
             target="_blank"
             aria-label="Link to Instagram-Account"
+            rel="noopener noreferrer"
           >
             <i class="fa-instagram fab footer-social-link"></i>
           </a>
@@ -46,6 +48,7 @@ export default function Footer() {
             href="https://twitter.com/CDPROJEKTRED"
             target="_blank"
             aria-label="Link to Twitter-Account"
+            rel="noopener noreferrer"
           >
             <i class="fa-twitter fab footer-social-link"></i>
           </a>
@@ -55,6 +58,7 @@ export default function Footer() {
             href="https://www.pinterest.de/today/best/dein-schlafzimmer-ist-dein-erholungsort/75475/"
             target="_blank"
             aria-label="Link to Pinterest-Account"
+            rel="noopener noreferrer"
           >
             <i class="fa-pinterest fab footer-social-link"></i>
           </a>
