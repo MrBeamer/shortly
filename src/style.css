@@ -139,6 +139,7 @@ body {
   background-color: var(--white);
   display: grid;
   margin: 0 120px;
+  margin-top: 15px;
   height: 70px;
   grid-auto-columns: 50% 30% 20%;
   align-items: center;
@@ -206,15 +207,13 @@ body {
 /* Card-Section */
 
 .card__container {
-  /* padding: 0 120px; */
   display: grid;
-  /* height: 300px; */
-  grid-template-columns: 25% 25% 25%;
-  /* justify-content: end; */
-  grid-gap: 74px;
+  grid-template-columns: 30% 30% 40%;
+  grid-gap: 50px;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 120px;
+  margin-right: 120px;
 }
 
 .card__box.card--brand {
@@ -232,7 +231,7 @@ body {
   position: relative;
   background-color: var(--white);
   height: 270px;
-  width: 400px;
+  width: 377px;
 }
 
 .card__icon-box {

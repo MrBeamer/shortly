@@ -41,7 +41,7 @@ export default function CreateShortenLink(props) {
       setLinkArr((prevLinkArr) => [...prevLinkArr, url]);
       setEnteredUrl("");
     }
-  }, [url]);
+  }, [url, setLinkArr]);
 
   return (
     <form onSubmit={addShortenLink} className="shorten__form">
