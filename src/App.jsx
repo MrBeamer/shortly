@@ -43,6 +43,7 @@ function App() {
             }
             customClass={"card--brand"}
           />
+          <div className="line"></div>
           <Card
             image={"/images/icon-detailed-records.svg"}
             title={"Detailed Records"}
