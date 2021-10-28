@@ -31,6 +31,9 @@ body {
   background-color: var(--primary);
   border-radius: 25px;
   text-align: center;
+
+  padding: 9px 21px;
+  font-weight: 500;
 }
 
 .btn--big {
@@ -94,6 +97,7 @@ body {
   color: var(--grey);
   font-size: 1rem;
   font-weight: 500;
+  align-self: center;
 }
 
 .nav-link.btn--small:last-child {

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-// import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 
 export default function Navigation() {
@@ -18,8 +18,9 @@ export default function Navigation() {
         </Nav>
         <Nav>
           <Nav.Link href="#deets">Login</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes" className="btn--small">
-            Sign Up
+          <Nav.Link eventKey={2} href="#memes">
+            <Button className="btn--small"> Sign Up</Button>
+            {/* Sign Up */}
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
