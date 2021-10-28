@@ -30,7 +30,7 @@ export default function Footer() {
             aria-label="Link to Facebook-Account"
             rel="noopener noreferrer"
           >
-            <i class="fa-facebook fab footer-social-link"></i>
+            <i class="fa-facebook fab footer__link--social"></i>
           </a>
         </li>
         <li>
@@ -40,7 +40,7 @@ export default function Footer() {
             aria-label="Link to Instagram-Account"
             rel="noopener noreferrer"
           >
-            <i class="fa-instagram fab footer-social-link"></i>
+            <i class="fa-instagram fab footer__link--social"></i>
           </a>
         </li>
         <li>
@@ -50,7 +50,7 @@ export default function Footer() {
             aria-label="Link to Twitter-Account"
             rel="noopener noreferrer"
           >
-            <i class="fa-twitter fab footer-social-link"></i>
+            <i class="fa-twitter fab footer__link--social"></i>
           </a>
         </li>
         <li>
@@ -60,7 +60,7 @@ export default function Footer() {
             aria-label="Link to Pinterest-Account"
             rel="noopener noreferrer"
           >
-            <i class="fa-pinterest fab footer-social-link"></i>
+            <i class="fa-pinterest fab footer__link--social"></i>
           </a>
         </li>
       </ul>

@@ -33,6 +33,13 @@ body {
   text-align: center;
 }
 
+.btn--big {
+  border-radius: 25px;
+  padding: 9px 42px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
@@ -43,11 +50,33 @@ body {
   background-color: var(--primary);
   border-color: var(--primary);
   filter: brightness(110%);
+  transform: scale(1.1);
+  transition: all 0.2s;
 }
 
 .btn-primary:active {
   filter: brightness(110%);
 }
+
+/* testing */
+.btn-primary:visited {
+  background-color: red !important;
+}
+
+.btn-primary:active {
+  background-color: red !important;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+.btn-primary:focus {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* testing after clicked it stays in focus, until you click somewhere else use it on input and copy button or maybe toggle */
 
 .btn-primary:focus {
   outline: none !important;
@@ -104,6 +133,7 @@ body {
 .header__text {
   color: var(--grey);
   width: 84%;
+  margin-bottom: 30px;
 }
 
 /* CreateShortenLink-Section */
@@ -295,7 +325,7 @@ body {
   color: var(--white);
   font-weight: 700;
   padding-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 /* Footer-Section */
@@ -314,5 +344,29 @@ footer {
   list-style: none;
 }
 
+.footer__link.title {
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
 .footer__link {
+  margin-bottom: 5px;
+}
+
+.footer__socials {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer__link--social {
+  color: var(--white);
+  margin-right: 18px;
+}
+
+.footer__link--social:hover,
+.footer__link:not([class*="title"]):hover {
+  color: var(--primary);
+  cursor: pointer;
 }

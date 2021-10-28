@@ -10,7 +10,7 @@ export default function Banner() {
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </p>
-        <Button> Get Started</Button>
+        <Button className="btn--big"> Get Started</Button>
       </div>
       <img
         src="/images/illustration-working.svg"
