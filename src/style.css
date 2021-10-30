@@ -81,6 +81,10 @@ body {
     brightness(114%) contrast(100%);
 }
 
+.line--2 {
+  display: none;
+}
+
 /* Navbar-Section */
 .nav-link {
   color: var(--grey);
@@ -450,6 +454,7 @@ footer {
   }
 
   .line--2 {
+    display: block;
     top: 32%;
     width: 100%;
     border-bottom: 2px solid #f0f1f6;

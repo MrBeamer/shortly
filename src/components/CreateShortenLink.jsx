@@ -23,7 +23,6 @@ export default function CreateShortenLink(props) {
             data.result.original_link.length >= 35 && window.innerWidth < 1200
               ? data.result.original_link.slice(0, 32) + " ..."
               : data.result.original_link;
-          console.log(slicedUrl);
 
           setUrl((prevUrl) => {
             return {
