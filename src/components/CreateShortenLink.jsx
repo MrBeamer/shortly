@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 
 export default function CreateShortenLink(props) {
-  // const { addShortenLink } = props;
   const { setLinkArr } = props;
   const [isLoading, setIsLoading] = useState(false);
   const [enteredUrl, setEnteredUrl] = useState("");
@@ -20,11 +19,16 @@ export default function CreateShortenLink(props) {
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {
-          console.log(data);
+          const slicedUrl =
+            data.result.original_link.length >= 35 && window.innerWidth < 1200
+              ? data.result.original_link.slice(0, 32) + " ..."
+              : data.result.original_link;
+          console.log(slicedUrl);
+
           setUrl((prevUrl) => {
             return {
               ...prevUrl,
-              original: data.result.original_link,
+              original: slicedUrl,
               shortened: data.result.short_link,
             };
           });
@@ -66,10 +70,10 @@ export default function CreateShortenLink(props) {
         value={enteredUrl}
         placeholder={"Shorten a link here..."}
       ></input>
+
       {isFocused && enteredUrl === "" ? (
         <p className="shorten__focus-message">Please add a link</p>
       ) : null}
-
       <Button disabled={isLoading} type="submit" className="shorten__button">
         Shorten it!
       </Button>

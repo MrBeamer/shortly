@@ -70,8 +70,6 @@ body {
   box-shadow: none !important;
 }
 
-/* testing after clicked it stays in focus, until you click somewhere else use it on input and copy button or maybe toggle */
-
 .btn-primary:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -106,7 +104,6 @@ body {
 /* Header-Section */
 
 .header {
-  /* padding-top: 100px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -182,6 +179,7 @@ body {
   grid-column: 2;
   border-radius: 6px;
 }
+
 /* ShortenLink-Section */
 
 .link__box {
@@ -268,9 +266,6 @@ body {
   z-index: 0;
 }
 
-.card__box.card--brand {
-}
-
 .card__box.card--detailed {
   margin-top: 50px;
 }
@@ -304,7 +299,6 @@ body {
   width: 40px;
 }
 .card__title {
-  /* padding: 100px 25px 0 25px; */
   padding: 75px 34px 0 34px;
   font-weight: 500;
 }
@@ -377,6 +371,19 @@ footer {
 }
 
 /* Media Queries */
+
+@media only screen and (max-width: 1385px) {
+  .card__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 100px 20px 40px 20px;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 935px) {
   :root {
     font-size: 18px;
@@ -427,8 +434,11 @@ footer {
   }
 
   .link__box {
+    position: relative;
     grid-auto-columns: 1fr;
     margin: 0 20px;
+    padding: 15px;
+    height: 180px;
   }
 
   .link__text--initial {
@@ -436,18 +446,26 @@ footer {
     grid-row: 1;
     margin: 0;
     margin-left: 20 px;
-    border-bottom: 2px solid var(--grey);
+    justify-self: self-start;
+  }
+
+  .line--2 {
+    top: 32%;
+    width: 100%;
+    border-bottom: 2px solid #f0f1f6;
+    position: absolute;
   }
 
   .link__text--shorten {
     grid-column: 1;
-    justify-self: center;
+    justify-self: self-start;
     grid-row: 2;
   }
 
   .link__button {
     grid-column: 1;
     grid-row: 3;
+    width: 94%;
   }
 
   .statistic {
@@ -462,10 +480,14 @@ footer {
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
-    margin: 100px 20px;
+    margin: 100px 20px 40px 20px;
   }
   .card__box {
     width: 100%;
+  }
+
+  .card__box.card--customizable {
+    margin-top: 50px;
   }
 
   .line {

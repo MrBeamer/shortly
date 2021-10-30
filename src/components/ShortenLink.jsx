@@ -19,6 +19,7 @@ export default function ShortenLink(props) {
   return (
     <div className="link__box">
       <p className="link__text--initial">{initialUrl}</p>
+      <div className="line--2"></div>
       <p className="link__text--shorten">{shortenedUrl}</p>
       <Button
         style={backgroundColor}
