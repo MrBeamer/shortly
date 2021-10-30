@@ -59,15 +59,6 @@ body {
 
 .btn-primary:active {
   filter: brightness(110%);
-}
-
-/* testing */
-.btn-primary:visited {
-  background-color: red !important;
-}
-
-.btn-primary:active {
-  background-color: red !important;
   transform: scale(1);
   transition: all 0.2s;
 }
@@ -143,6 +134,7 @@ body {
 /* CreateShortenLink-Section */
 
 .shorten__form {
+  position: relative;
   background-image: url(/images/bg-shorten-desktop.svg);
   background-color: var(--secondary);
   background-repeat: repeat;
@@ -167,6 +159,23 @@ body {
   border: none;
 }
 
+.shorten__focus-message {
+  position: absolute;
+  bottom: 0%;
+  left: 6%;
+  color: var(--tertiary);
+  font-size: 0.75rem;
+}
+
+#input__placeholder--color::placeholder {
+  color: var(--tertiary);
+}
+
+.shorten__input:focus {
+  outline: 1px solid var(--tertiary);
+  box-shadow: 0px 0px 0px 2px #f46262;
+}
+
 .shorten__button {
   width: 65%;
   height: 58px;
@@ -182,6 +191,8 @@ body {
   margin-top: 15px;
   height: 70px;
   grid-auto-columns: 50% 30% 20%;
+  border-radius: 6px;
+
   align-items: center;
   justify-items: center;
 }
@@ -205,18 +216,7 @@ body {
 }
 
 .btn-primary.link__button:hover {
-  background-color: var(--secondary);
-  border-color: var(--secondary);
-}
-
-.btn-primary.link__button:active {
-  background-color: var(--secondary);
-  border-color: var(--secondary);
-}
-
-.btn-primary.link__button:focus {
-  outline: none !important;
-  box-shadow: none !important;
+  filter: brightness(110%);
 }
 
 /* Section--2 */
@@ -224,6 +224,7 @@ body {
 .section--2 {
   background-color: #f0f1f6;
   padding-bottom: 100px;
+  position: relative;
 }
 
 /* Statistic-Section */

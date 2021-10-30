@@ -20,7 +20,6 @@ export default function Navigation() {
           <Nav.Link href="#deets">Login</Nav.Link>
           <Nav.Link eventKey={2} href="#memes">
             <Button className="btn--small"> Sign Up</Button>
-            {/* Sign Up */}
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
