@@ -11,7 +11,6 @@ export default function CreateShortenLink(props) {
 
   function handleChange(event) {
     const userInput = event.target.value;
-    console.log(userInput);
     setEnteredUrl(userInput);
   }
 

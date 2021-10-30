@@ -10,12 +10,6 @@ import Footer from "./components/Footer";
 
 function App() {
   const [linkArr, setLinkArr] = useState([]);
-  console.log(linkArr);
-  // function addShortenLink(event) {
-  //   setLinkArr((prevLinkArr) => [...prevLinkArr, link]);
-  //   setLink("");
-  //   event.preventDefault();
-  // }
 
   return (
     <div>

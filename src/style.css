@@ -321,7 +321,8 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  height: 240px;
+  height: auto;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -329,7 +330,6 @@ body {
   font-size: 2.5rem;
   color: var(--white);
   font-weight: 700;
-  padding-top: 50px;
   margin-bottom: 28px;
 }
 
@@ -338,7 +338,7 @@ body {
 footer {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  height: 350px;
+  height: auto;
   background-color: var(--dark-violet);
   padding: 60px 120px;
 }
@@ -375,3 +375,118 @@ footer {
   color: var(--primary);
   cursor: pointer;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 935px) {
+  :root {
+    font-size: 18px;
+  }
+
+  .navbar {
+    padding: 30px 20px 0px 20px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__image {
+    grid-row: 1;
+    width: 80%;
+  }
+
+  .header__content {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  .header__text {
+    width: 100%;
+  }
+
+  .shorten__form {
+    grid-template-columns: 1fr;
+    height: 260px;
+    margin: 60px 20px;
+    margin-bottom: 22px;
+  }
+
+  .shorten__input {
+    grid-row: 1;
+    width: 80%;
+  }
+  .shorten__button {
+    grid-column: 1;
+    grid-row: 2;
+    width: 80%;
+  }
+
+  .link__box {
+    grid-auto-columns: 1fr;
+    margin: 0 20px;
+  }
+
+  .link__text--initial {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    margin-left: 20 px;
+    border-bottom: 2px solid var(--grey);
+  }
+
+  .link__text--shorten {
+    grid-column: 1;
+    justify-self: center;
+    grid-row: 2;
+  }
+
+  .link__button {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .statistic {
+    margin: 140px 20px 0 20px;
+  }
+
+  .statistic__content {
+    width: 100%;
+  }
+
+  .card__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 20px;
+  }
+  .card__box {
+    width: 100%;
+  }
+
+  .line {
+    display: none;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .filter-svg {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .footer__links {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/* 433 */
