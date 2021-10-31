@@ -39,6 +39,7 @@ body {
 .btn--big {
   border-radius: 25px;
   padding: 9px 42px;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -121,15 +122,13 @@ body {
 }
 
 .header__title {
-  font-size: 3rem;
-  width: 90%;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
 .header__text {
-  font-size: 1rem;
   color: var(--grey);
-  width: 73%;
+  width: 84%;
   margin-bottom: 30px;
 }
 
@@ -222,7 +221,7 @@ body {
   filter: brightness(110%);
 }
 
-/* main-section*/
+/* Main-Section */
 
 .main__section {
   background-color: #f0f1f6;
@@ -385,7 +384,9 @@ footer {
   }
 
   .line {
-    display: none;
+    width: 1%;
+    height: 79%;
+    top: 0;
   }
 }
 
@@ -497,7 +498,9 @@ footer {
   }
 
   .line {
-    display: none;
+    width: 1%;
+    height: 79%;
+    top: 0;
   }
 
   footer {
