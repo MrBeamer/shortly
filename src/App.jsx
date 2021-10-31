@@ -15,7 +15,7 @@ function App() {
     <div>
       <Navigation />
       <Banner />
-      <div className="section--2">
+      <main className="main__section">
         <CreateShortenLink setLinkArr={setLinkArr} />
         {linkArr.map((link, index) => {
           return (
@@ -55,7 +55,7 @@ function App() {
             customClass={"card--customizable"}
           />
         </div>
-      </div>
+      </main>
       <CallToAction />
       <Footer />
     </div>

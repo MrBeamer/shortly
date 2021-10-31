@@ -39,7 +39,6 @@ body {
 .btn--big {
   border-radius: 25px;
   padding: 9px 42px;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -122,13 +121,15 @@ body {
 }
 
 .header__title {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  width: 90%;
   font-weight: 700;
 }
 
 .header__text {
+  font-size: 1rem;
   color: var(--grey);
-  width: 84%;
+  width: 73%;
   margin-bottom: 30px;
 }
 
@@ -221,9 +222,9 @@ body {
   filter: brightness(110%);
 }
 
-/* Section--2 */
+/* main-section*/
 
-.section--2 {
+.main__section {
   background-color: #f0f1f6;
   padding-bottom: 100px;
   position: relative;

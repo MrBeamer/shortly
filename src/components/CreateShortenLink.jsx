@@ -53,7 +53,7 @@ export default function CreateShortenLink(props) {
     setIsFocused(false);
   }
 
-  const placeholderColor = isFocused ? "input__placeholder--color" : "";
+  const placeholderColor = isFocused ? "input__placeholder--color" : null;
 
   return (
     <form onSubmit={addShortenLink} className="shorten__form">
