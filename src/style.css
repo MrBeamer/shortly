@@ -440,6 +440,11 @@ footer {
     height: 150px;
   }
 
+  .shorten__focus-message {
+    top: 41%;
+    left: 11%;
+  }
+
   .shorten__input {
     grid-row: 1;
     width: 80%;
