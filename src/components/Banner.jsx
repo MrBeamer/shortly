@@ -12,6 +12,7 @@ export default function Banner() {
         </p>
         <Button className="btn--big"> Get Started</Button>
       </div>
+
       <img
         src="/images/illustration-working.svg"
         className="header__image"

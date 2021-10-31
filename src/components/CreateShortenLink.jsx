@@ -20,8 +20,8 @@ export default function CreateShortenLink(props) {
       .then((data) => {
         if (data.result) {
           const slicedUrl =
-            data.result.original_link.length >= 35 && window.innerWidth < 1200
-              ? data.result.original_link.slice(0, 32) + " ..."
+            data.result.original_link.length >= 35 && window.innerWidth < 600
+              ? data.result.original_link.slice(0, 35) + " ..."
               : data.result.original_link;
 
           setUrl((prevUrl) => {
