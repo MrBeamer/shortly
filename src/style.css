@@ -104,14 +104,6 @@ body {
   padding: 30px 120px 0px 120px;
 }
 
-.navbar-toggler-icon {
-  color: var(--black);
-}
-
-.navbar-toggler {
-  color: var(--black);
-}
-
 .navbar-collapse.collapse.show {
   background-color: var(--secondary);
   border-radius: 8px;
@@ -131,6 +123,17 @@ body {
 
 .navbar-line {
   color: var(--grey);
+}
+
+.fa-bars {
+  font-size: 2.5rem;
+  color: var(--grey);
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
 }
 
 /* Header-Section */

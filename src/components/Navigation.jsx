@@ -9,7 +9,9 @@ export default function Navigation() {
       <Navbar.Brand href="#home">
         <img src="/images/logo.svg" alt="logo" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav">
+        <i class="fas fa-bars"></i>
+      </Navbar.Toggle>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#features">Features</Nav.Link>
