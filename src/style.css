@@ -507,6 +507,7 @@ footer {
   footer {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: 60px 0;
   }
 
   .filter-svg {
