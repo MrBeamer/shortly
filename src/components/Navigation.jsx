@@ -15,6 +15,7 @@ export default function Navigation() {
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
           <Nav.Link href="#pricing">Resources</Nav.Link>
+          <hr className="navbar-line"></hr>
         </Nav>
         <Nav>
           <Nav.Link href="#deets">Login</Nav.Link>

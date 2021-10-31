@@ -104,6 +104,35 @@ body {
   padding: 30px 120px 0px 120px;
 }
 
+.navbar-toggler-icon {
+  color: var(--black);
+}
+
+.navbar-toggler {
+  color: var(--black);
+}
+
+.navbar-collapse.collapse.show {
+  background-color: var(--secondary);
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.navbar-collapse.collapse.show .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.navbar-collapse.collapse.show .navbar-nav .nav-link:first-child {
+  margin-top: 10px;
+}
+
+.navbar-line {
+  color: var(--grey);
+}
+
 /* Header-Section */
 
 .header {
