@@ -121,16 +121,38 @@ body {
   margin-top: 10px;
 }
 
+.navbar-collapse.collapse.show .navbar-nav .nav-link button {
+  width: 270px;
+}
+
 .navbar-line {
   color: var(--grey);
 }
 
 .fa-bars {
   font-size: 2.5rem;
-  color: var(--grey);
+  color: var(--black);
 }
 
+/* @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+} */
+
+/* .navbar-toggler:focus {
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+} */
+
 .navbar-toggler:focus {
+  /* color: var(--grey); */
   text-decoration: none;
   outline: 0;
   box-shadow: none;
