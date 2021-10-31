@@ -16,7 +16,7 @@ export default function Navigation() {
         <Nav className="me-auto">
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
-          <Nav.Link href="#pricing">Resources</Nav.Link>
+          <Nav.Link href="#resources">Resources</Nav.Link>
           <hr className="navbar-line"></hr>
         </Nav>
         <Nav>

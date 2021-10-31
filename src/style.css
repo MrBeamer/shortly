@@ -100,6 +100,10 @@ body {
   color: var(--black);
 }
 
+.nav-link.active {
+  color: var(--black);
+}
+
 .navbar {
   padding: 30px 120px 0px 120px;
 }
