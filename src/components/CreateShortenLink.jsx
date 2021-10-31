@@ -69,7 +69,7 @@ export default function CreateShortenLink(props) {
         value={enteredUrl}
         placeholder={"Shorten a link here..."}
         pattern="https?://.+"
-        title="Your input must must start with http:// or https:// "
+        title="Your link must start with http:// or https:// "
       ></input>
 
       {isFocused && enteredUrl === "" ? (
