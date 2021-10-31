@@ -360,7 +360,7 @@ footer {
   display: flex;
   list-style: none;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .footer__link--social {
@@ -491,6 +491,7 @@ footer {
   }
   .card__box {
     width: 100%;
+    height: fit-content;
   }
 
   .card__box.card--customizable {
