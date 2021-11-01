@@ -12,7 +12,7 @@ function App() {
   const [linkArr, setLinkArr] = useState([]);
 
   return (
-    <div>
+    <div className="box">
       <Navigation />
       <Banner />
       <main className="main__section">

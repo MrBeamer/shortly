@@ -25,6 +25,11 @@ body {
   /* font-size: 18px; */
 }
 
+.box {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 /* General */
 
 .btn--small {
