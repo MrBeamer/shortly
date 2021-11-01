@@ -25,11 +25,6 @@ body {
   /* font-size: 18px; */
 }
 
-.box {
-  width: 1400px;
-  margin: 0 auto;
-}
-
 /* General */
 
 .btn--small {
@@ -450,6 +445,12 @@ footer {
 }
 
 /* Media Queries */
+@media only screen and (min-width: 1500px) {
+  .box {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
 
 @media only screen and (max-width: 1385px) {
   .card__container {
