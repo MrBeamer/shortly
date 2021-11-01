@@ -256,7 +256,6 @@ input::placeholder {
   height: 70px;
   grid-auto-columns: 50% 30% 20%;
   border-radius: 6px;
-
   align-items: center;
   justify-items: center;
 }
