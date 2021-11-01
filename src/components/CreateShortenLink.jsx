@@ -58,6 +58,7 @@ export default function CreateShortenLink(props) {
   return (
     <form onSubmit={addShortenLink} className="shorten__form">
       <input
+        disabled={isLoading}
         onFocus={handleFocus}
         onBlur={handleBlur}
         required
